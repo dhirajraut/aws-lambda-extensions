@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- The Basics -->
+  <groupId>com.github.dhirajraut</groupId>
+  <artifactId>aws-lambda-extensions-wrapper</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <!-- More Project Information -->
+  <name>aws-lambda-extensions-wrapper</name>
+  <description>
+    The project demonstrates how to create the AWS Lambda layers using Java.
+    The project has two components. Base layer and lambda.
+    Base layer goes to the layer.
+  </description>
+
+  <!-- Build -->
+  <modules>
+    <module>aws-lambda-extensions</module> <!-- Wrap this jar in /java/lib/aws-lambda-layers-base-0.0.1-SNAPSHOT.jar -->
+    <module>aws-lambda-simple</module>
+  </modules>
+</project>
